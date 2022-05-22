@@ -95,7 +95,7 @@ int main(){
 	first_entropy = ((p_b*h_b)+(p_w*h_w)); //H= P(b)*H(b)+P(w)*H(w)
 	second_entropy = (p_bb*p_b*h_bb)+(p_ww*p_w*h_ww)+(p_wb*p_b*h_bw)+(p_bw*p_w*h_wb);
 	
-	printf("iid entropy= %f, first entropy= %f, second entropy= %f\n\n", iid_entropy, first_entropy, second_entropy);
+	printf("first order entropy= %f, first order markov entropy= %f, second order markov entropy= %f\n\n", iid_entropy, first_entropy, second_entropy);
 	printf("-----------------------------------------------\n\n");
 	
 	float neg_one, one, zero;
